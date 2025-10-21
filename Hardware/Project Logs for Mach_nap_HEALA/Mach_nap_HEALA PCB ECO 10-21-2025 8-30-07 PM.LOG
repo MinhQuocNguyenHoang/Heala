@@ -1,0 +1,34 @@
+Removed Pin From Net: NetName=5V Pin=D1-A
+Removed Pin From Net: NetName=NetAMS1_3 Pin=D1-C
+Removed Pin From Net: NetName=5V Pin=J1-1
+Removed Pin From Net: NetName=D- Pin=J1-2
+Removed Pin From Net: NetName=D+ Pin=J1-3
+Removed Pin From Net: NetName=GND Pin=J1-4
+Removed Pin From Net: NetName=GND Pin=J1-5
+Removed Pin From Net: NetName=GND Pin=J1-S1
+Removed Pin From Net: NetName=GND Pin=J1-S2
+Removed Pin From Net: NetName=GND Pin=J1-S3
+Removed Pin From Net: NetName=GND Pin=J1-S4
+Removed Member From Class: ClassName=Mach_nap_HEALA Member=D1
+Removed Member From Class: ClassName=Mach_nap_HEALA Member=J1
+Change Component Comment : Designator=C5 Old Comment=106 New Comment=100n
+Change Component Comment : Designator=C6 Old Comment=106 New Comment=100n
+Added Component: Designator=J?(USB_TYPE_A)
+Add component (AddParameter): Name = "Availability"; Value = "In Stock"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/USB-AM-S-S-W-TH/Samtec/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Samtec"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "USB-AM-S-S-W-TH"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Purchase-URL"; Value = "https://pricing.snapeda.com/search/part/USB-AM-S-S-W-TH/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/USB-AM-S-S-W-TH/Samtec/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetAMS1_3 Pin=J?-01
+Added Pin To Net: NetName=D- Pin=J?-02
+Added Pin To Net: NetName=D+ Pin=J?-03
+Added Pin To Net: NetName=GND Pin=J?-04
+Added Pin To Net: NetName=GND Pin=J?-S1
+Added Pin To Net: NetName=GND Pin=J?-S2
+Change Net Name : Old Net Name=NetAMS1_3 New Net Name=+5
+Added Member To Class: ClassName=Mach_nap_HEALA Member=Component J? USB_TYPEA
+Added Rule: Name=Schematic Supply Nets_3
