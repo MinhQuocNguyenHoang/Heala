@@ -1,5 +1,0 @@
-Removed Pin From Net: NetName=5V Pin=D1-A
-Added Pin To Net: NetName=5V Pin=AMS1-3
-Added Pin To Net: NetName=5V Pin=C2-1
-Added Pin To Net: NetName=5V Pin=C4-1
-Added Member To Class: ClassName=Mach_nap_HEALA Member=Component J1 Micro USB 2.0 Type B
