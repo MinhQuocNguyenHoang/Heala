@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+D:/altium_and_source_projects/Health_monitoring/driver_oled/build/CMakeFiles/bootloader
+D:/altium_and_source_projects/Health_monitoring/driver_oled/build/CMakeFiles/bootloader.rule
+D:/altium_and_source_projects/Health_monitoring/driver_oled/build/CMakeFiles/bootloader-complete.rule
+D:/altium_and_source_projects/Health_monitoring/driver_oled/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+D:/altium_and_source_projects/Health_monitoring/driver_oled/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+D:/altium_and_source_projects/Health_monitoring/driver_oled/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+D:/altium_and_source_projects/Health_monitoring/driver_oled/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+D:/altium_and_source_projects/Health_monitoring/driver_oled/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+D:/altium_and_source_projects/Health_monitoring/driver_oled/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+D:/altium_and_source_projects/Health_monitoring/driver_oled/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule

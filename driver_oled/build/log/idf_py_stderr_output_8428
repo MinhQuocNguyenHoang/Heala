@@ -1,0 +1,724 @@
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM37 instead...[0m
+[0;33m--- esp-idf-monitor 1.6.0 on \\.\COM37 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081961: panic_abort at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/panic.c:454
+--- 0x40085d01: esp_system_abort at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008c29d: __assert_func at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/newlib/assert.c:80
+--- 0x40086572: xQueueSemaphoreTake at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/queue.c:1713 (discriminator 1)
+--- 0x4008c024: esp_log_impl_lock_timeout at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_lock.c:42
+--- 0x400d2777: log_level_get at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/log_level/tag_log_level/tag_log_level.c:65
+--- 0x400d27ad: esp_log_level_get_timeout at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/log_level/tag_log_level/tag_log_level.c:102
+--- 0x400e7772: esp_log_writev at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_write.c:32
+--- 0x4008c0d5: esp_log_write at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_write.c:44
+--- 0x400d6d55: i2c_scanner at D:/altium_and_source_projects/Health_monitoring/driver_oled/components/heala_oled.c:175 (discriminator 1)
+--- 0x400d6dda: i2c_master_slave_init at D:/altium_and_source_projects/Health_monitoring/driver_oled/components/heala_oled.c:207
+--- 0x400d6e7b: oled_init at D:/altium_and_source_projects/Health_monitoring/driver_oled/components/heala_oled.c:248
+--- 0x400d6be7: vTaskOledInit at D:/altium_and_source_projects/Health_monitoring/driver_oled/main/driver_oled.c:58
+--- 0x40086745: vPortTaskWrapper at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081961: panic_abort at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/panic.c:454
+--- 0x40085d01: esp_system_abort at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008c29d: __assert_func at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/newlib/assert.c:80
+--- 0x40086572: xQueueSemaphoreTake at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/queue.c:1713 (discriminator 1)
+--- 0x4008c024: esp_log_impl_lock_timeout at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_lock.c:42
+--- 0x400d2777: log_level_get at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/log_level/tag_log_level/tag_log_level.c:65
+--- 0x400d27ad: esp_log_level_get_timeout at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/log_level/tag_log_level/tag_log_level.c:102
+--- 0x400e7772: esp_log_writev at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_write.c:32
+--- 0x4008c0d5: esp_log_write at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_write.c:44
+--- 0x400d6d55: i2c_scanner at D:/altium_and_source_projects/Health_monitoring/driver_oled/components/heala_oled.c:175 (discriminator 1)
+--- 0x400d6dda: i2c_master_slave_init at D:/altium_and_source_projects/Health_monitoring/driver_oled/components/heala_oled.c:207
+--- 0x400d6e7b: oled_init at D:/altium_and_source_projects/Health_monitoring/driver_oled/components/heala_oled.c:248
+--- 0x400d6be7: vTaskOledInit at D:/altium_and_source_projects/Health_monitoring/driver_oled/main/driver_oled.c:58
+--- 0x40086745: vPortTaskWrapper at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081961: panic_abort at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/panic.c:454
+--- 0x40085d01: esp_system_abort at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008c29d: __assert_func at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/newlib/assert.c:80
+--- 0x40086572: xQueueSemaphoreTake at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/queue.c:1713 (discriminator 1)
+--- 0x4008c024: esp_log_impl_lock_timeout at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_lock.c:42
+--- 0x400d2777: log_level_get at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/log_level/tag_log_level/tag_log_level.c:65
+--- 0x400d27ad: esp_log_level_get_timeout at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/log_level/tag_log_level/tag_log_level.c:102
+--- 0x400e7772: esp_log_writev at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_write.c:32
+--- 0x4008c0d5: esp_log_write at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_write.c:44
+--- 0x400d6d55: i2c_scanner at D:/altium_and_source_projects/Health_monitoring/driver_oled/components/heala_oled.c:175 (discriminator 1)
+--- 0x400d6dda: i2c_master_slave_init at D:/altium_and_source_projects/Health_monitoring/driver_oled/components/heala_oled.c:207
+--- 0x400d6e7b: oled_init at D:/altium_and_source_projects/Health_monitoring/driver_oled/components/heala_oled.c:248
+--- 0x400d6be7: vTaskOledInit at D:/altium_and_source_projects/Health_monitoring/driver_oled/main/driver_oled.c:58
+--- 0x40086745: vPortTaskWrapper at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081961: panic_abort at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/panic.c:454
+--- 0x40085d01: esp_system_abort at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008c29d: __assert_func at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/newlib/assert.c:80
+--- 0x40086572: xQueueSemaphoreTake at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/queue.c:1713 (discriminator 1)
+--- 0x4008c024: esp_log_impl_lock_timeout at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_lock.c:42
+--- 0x400d2777: log_level_get at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/log_level/tag_log_level/tag_log_level.c:65
+--- 0x400d27ad: esp_log_level_get_timeout at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/log_level/tag_log_level/tag_log_level.c:102
+--- 0x400e7772: esp_log_writev at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_write.c:32
+--- 0x4008c0d5: esp_log_write at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_write.c:44
+--- 0x400d6d55: i2c_scanner at D:/altium_and_source_projects/Health_monitoring/driver_oled/components/heala_oled.c:175 (discriminator 1)
+--- 0x400d6dda: i2c_master_slave_init at D:/altium_and_source_projects/Health_monitoring/driver_oled/components/heala_oled.c:207
+--- 0x400d6e7b: oled_init at D:/altium_and_source_projects/Health_monitoring/driver_oled/components/heala_oled.c:248
+--- 0x400d6be7: vTaskOledInit at D:/altium_and_source_projects/Health_monitoring/driver_oled/main/driver_oled.c:58
+--- 0x40086745: vPortTaskWrapper at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081961: panic_abort at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/panic.c:454
+--- 0x40085d01: esp_system_abort at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008c29d: __assert_func at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/newlib/assert.c:80
+--- 0x40086572: xQueueSemaphoreTake at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/queue.c:1713 (discriminator 1)
+--- 0x4008c024: esp_log_impl_lock_timeout at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_lock.c:42
+--- 0x400d2777: log_level_get at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/log_level/tag_log_level/tag_log_level.c:65
+--- 0x400d27ad: esp_log_level_get_timeout at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/log_level/tag_log_level/tag_log_level.c:102
+--- 0x400e7772: esp_log_writev at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_write.c:32
+--- 0x4008c0d5: esp_log_write at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_write.c:44
+--- 0x400d6d55: i2c_scanner at D:/altium_and_source_projects/Health_monitoring/driver_oled/components/heala_oled.c:175 (discriminator 1)
+--- 0x400d6dda: i2c_master_slave_init at D:/altium_and_source_projects/Health_monitoring/driver_oled/components/heala_oled.c:207
+--- 0x400d6e7b: oled_init at D:/altium_and_source_projects/Health_monitoring/driver_oled/components/heala_oled.c:248
+--- 0x400d6be7: vTaskOledInit at D:/altium_and_source_projects/Health_monitoring/driver_oled/main/driver_oled.c:58
+--- 0x40086745: vPortTaskWrapper at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081961: panic_abort at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/panic.c:454
+--- 0x40085d01: esp_system_abort at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008c29d: __assert_func at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/newlib/assert.c:80
+[0m
+[0;33m--- 0x40086572: xQueueSemaphoreTake at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/queue.c:1713 (discriminator 1)
+[0m
+[0;33m--- 0x400d6e7b: oled_init at D:/altium_and_source_projects/Health_monitoring/driver_oled/components/heala_oled.c:248
+[0m
+[0;33m--- 0x400d6be7: vTaskOledInit at D:/altium_and_source_projects/Health_monitoring/driver_oled/main/driver_oled.c:58
+[0m
+[0;33m--- 0x40086745: vPortTaskWrapper at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081961: panic_abort at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/panic.c:454
+--- 0x40085d01: esp_system_abort at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008c29d: __assert_func at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/newlib/assert.c:80
+--- 0x40086572: xQueueSemaphoreTake at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/queue.c:1713 (discriminator 1)
+--- 0x4008c024: esp_log_impl_lock_timeout at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_lock.c:42
+--- 0x400d2777: log_level_get at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/log_level/tag_log_level/tag_log_level.c:65
+--- 0x400d27ad: esp_log_level_get_timeout at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/log_level/tag_log_level/tag_log_level.c:102
+--- 0x400e7772: esp_log_writev at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_write.c:32
+--- 0x4008c0d5: esp_log_write at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_write.c:44
+--- 0x400d6d55: i2c_scanner at D:/altium_and_source_projects/Health_monitoring/driver_oled/components/heala_oled.c:175 (discriminator 1)
+--- 0x400d6dda: i2c_master_slave_init at D:/altium_and_source_projects/Health_monitoring/driver_oled/components/heala_oled.c:207
+--- 0x400d6e7b: oled_init at D:/altium_and_source_projects/Health_monitoring/driver_oled/components/heala_oled.c:248
+--- 0x400d6be7: vTaskOledInit at D:/altium_and_source_projects/Health_monitoring/driver_oled/main/driver_oled.c:58
+--- 0x40086745: vPortTaskWrapper at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081961: panic_abort at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/panic.c:454
+--- 0x40085d01: esp_system_abort at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008c29d: __assert_func at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/newlib/assert.c:80
+--- 0x40086572: xQueueSemaphoreTake at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/queue.c:1713 (discriminator 1)
+--- 0x4008c024: esp_log_impl_lock_timeout at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_lock.c:42
+--- 0x400d2777: log_level_get at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/log_level/tag_log_level/tag_log_level.c:65
+--- 0x400d27ad: esp_log_level_get_timeout at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/log_level/tag_log_level/tag_log_level.c:102
+--- 0x400e7772: esp_log_writev at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_write.c:32
+--- 0x4008c0d5: esp_log_write at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_write.c:44
+--- 0x400d6d55: i2c_scanner at D:/altium_and_source_projects/Health_monitoring/driver_oled/components/heala_oled.c:175 (discriminator 1)
+--- 0x400d6dda: i2c_master_slave_init at D:/altium_and_source_projects/Health_monitoring/driver_oled/components/heala_oled.c:207
+--- 0x400d6e7b: oled_init at D:/altium_and_source_projects/Health_monitoring/driver_oled/components/heala_oled.c:248
+--- 0x400d6be7: vTaskOledInit at D:/altium_and_source_projects/Health_monitoring/driver_oled/main/driver_oled.c:58
+--- 0x40086745: vPortTaskWrapper at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081961: panic_abort at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/panic.c:454
+--- 0x40085d01: esp_system_abort at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008c29d: __assert_func at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/newlib/assert.c:80
+--- 0x40086572: xQueueSemaphoreTake at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/queue.c:1713 (discriminator 1)
+--- 0x4008c024: esp_log_impl_lock_timeout at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_lock.c:42
+--- 0x400d2777: log_level_get at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/log_level/tag_log_level/tag_log_level.c:65
+--- 0x400d27ad: esp_log_level_get_timeout at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/log_level/tag_log_level/tag_log_level.c:102
+--- 0x400e7772: esp_log_writev at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_write.c:32
+--- 0x4008c0d5: esp_log_write at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_write.c:44
+--- 0x400d6d55: i2c_scanner at D:/altium_and_source_projects/Health_monitoring/driver_oled/components/heala_oled.c:175 (discriminator 1)
+--- 0x400d6dda: i2c_master_slave_init at D:/altium_and_source_projects/Health_monitoring/driver_oled/components/heala_oled.c:207
+--- 0x400d6e7b: oled_init at D:/altium_and_source_projects/Health_monitoring/driver_oled/components/heala_oled.c:248
+--- 0x400d6be7: vTaskOledInit at D:/altium_and_source_projects/Health_monitoring/driver_oled/main/driver_oled.c:58
+--- 0x40086745: vPortTaskWrapper at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- To exit from IDF monitor please use "Ctrl+]". Alternatively, you can use Ctrl+T Ctrl+X to exit.[0m
+[0;33m--- 0x40081961: panic_abort at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/panic.c:454
+--- 0x40085d01: esp_system_abort at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008c29d: __assert_func at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/newlib/assert.c:80
+--- 0x40086572: xQueueSemaphoreTake at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/queue.c:1713 (discriminator 1)
+--- 0x4008c024: esp_log_impl_lock_timeout at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_lock.c:42
+--- 0x400d2777: log_level_get at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/log_level/tag_log_level/tag_log_level.c:65
+--- 0x400d27ad: esp_log_level_get_timeout at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/log_level/tag_log_level/tag_log_level.c:102
+--- 0x400e7772: esp_log_writev at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_write.c:32
+--- 0x4008c0d5: esp_log_write at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_write.c:44
+--- 0x400d6d55: i2c_scanner at D:/altium_and_source_projects/Health_monitoring/driver_oled/components/heala_oled.c:175 (discriminator 1)
+--- 0x400d6dda: i2c_master_slave_init at D:/altium_and_source_projects/Health_monitoring/driver_oled/components/heala_oled.c:207
+--- 0x400d6e7b: oled_init at D:/altium_and_source_projects/Health_monitoring/driver_oled/components/heala_oled.c:248
+--- 0x400d6be7: vTaskOledInit at D:/altium_and_source_projects/Health_monitoring/driver_oled/main/driver_oled.c:58
+--- 0x40086745: vPortTaskWrapper at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- To exit from IDF monitor please use "Ctrl+]". Alternatively, you can use Ctrl+T Ctrl+X to exit.[0m
+[0;33m--- To exit from IDF monitor please use "Ctrl+]". Alternatively, you can use Ctrl+T Ctrl+X to exit.[0m
+[0;33m--- To exit from IDF monitor please use "Ctrl+]". Alternatively, you can use Ctrl+T Ctrl+X to exit.[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081961: panic_abort at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/panic.c:454
+--- 0x40085d01: esp_system_abort at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008c29d: __assert_func at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/newlib/assert.c:80
+--- 0x40086572: xQueueSemaphoreTake at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/queue.c:1713 (discriminator 1)
+--- 0x4008c024: esp_log_impl_lock_timeout at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_lock.c:42
+--- 0x400d2777: log_level_get at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/log_level/tag_log_level/tag_log_level.c:65
+--- 0x400d27ad: esp_log_level_get_timeout at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/log_level/tag_log_level/tag_log_level.c:102
+--- 0x400e7772: esp_log_writev at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_write.c:32
+--- 0x4008c0d5: esp_log_write at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_write.c:44
+--- 0x400d6d55: i2c_scanner at D:/altium_and_source_projects/Health_monitoring/driver_oled/components/heala_oled.c:175 (discriminator 1)
+--- 0x400d6dda: i2c_master_slave_init at D:/altium_and_source_projects/Health_monitoring/driver_oled/components/heala_oled.c:207
+--- 0x400d6e7b: oled_init at D:/altium_and_source_projects/Health_monitoring/driver_oled/components/heala_oled.c:248
+--- 0x400d6be7: vTaskOledInit at D:/altium_and_source_projects/Health_monitoring/driver_oled/main/driver_oled.c:58
+--- 0x40086745: vPortTaskWrapper at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- To exit from IDF monitor please use "Ctrl+]". Alternatively, you can use Ctrl+T Ctrl+X to exit.[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- To exit from IDF monitor please use "Ctrl+]". Alternatively, you can use Ctrl+T Ctrl+X to exit.[0m
+[0;33m--- To exit from IDF monitor please use "Ctrl+]". Alternatively, you can use Ctrl+T Ctrl+X to exit.[0m
+[0;33m--- 0x40081961: panic_abort at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/panic.c:454
+--- 0x40085d01: esp_system_abort at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008c29d: __assert_func at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/newlib/assert.c:80
+--- 0x40086572: xQueueSemaphoreTake at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/queue.c:1713 (discriminator 1)
+--- 0x4008c024: esp_log_impl_lock_timeout at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_lock.c:42
+--- 0x400d2777: log_level_get at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/log_level/tag_log_level/tag_log_level.c:65
+--- 0x400d27ad: esp_log_level_get_timeout at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/log_level/tag_log_level/tag_log_level.c:102
+--- 0x400e7772: esp_log_writev at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_write.c:32
+--- 0x4008c0d5: esp_log_write at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_write.c:44
+--- 0x400d6d55: i2c_scanner at D:/altium_and_source_projects/Health_monitoring/driver_oled/components/heala_oled.c:175 (discriminator 1)
+--- 0x400d6dda: i2c_master_slave_init at D:/altium_and_source_projects/Health_monitoring/driver_oled/components/heala_oled.c:207
+--- 0x400d6e7b: oled_init at D:/altium_and_source_projects/Health_monitoring/driver_oled/components/heala_oled.c:248
+--- 0x400d6be7: vTaskOledInit at D:/altium_and_source_projects/Health_monitoring/driver_oled/main/driver_oled.c:58
+--- 0x40086745: vPortTaskWrapper at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081961: panic_abort at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/panic.c:454
+--- 0x40085d01: esp_system_abort at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008c29d: __assert_func at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/newlib/assert.c:80
+--- 0x40086572: xQueueSemaphoreTake at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/queue.c:1713 (discriminator 1)
+--- 0x4008c024: esp_log_impl_lock_timeout at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_lock.c:42
+--- 0x400d2777: log_level_get at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/log_level/tag_log_level/tag_log_level.c:65
+--- 0x400d27ad: esp_log_level_get_timeout at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/log_level/tag_log_level/tag_log_level.c:102
+--- 0x400e7772: esp_log_writev at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_write.c:32
+--- 0x4008c0d5: esp_log_write at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_write.c:44
+--- 0x400d6d55: i2c_scanner at D:/altium_and_source_projects/Health_monitoring/driver_oled/components/heala_oled.c:175 (discriminator 1)
+--- 0x400d6dda: i2c_master_slave_init at D:/altium_and_source_projects/Health_monitoring/driver_oled/components/heala_oled.c:207
+--- 0x400d6e7b: oled_init at D:/altium_and_source_projects/Health_monitoring/driver_oled/components/heala_oled.c:248
+--- 0x400d6be7: vTaskOledInit at D:/altium_and_source_projects/Health_monitoring/driver_oled/main/driver_oled.c:58
+--- 0x40086745: vPortTaskWrapper at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081961: panic_abort at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/panic.c:454
+--- 0x40085d01: esp_system_abort at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008c29d: __assert_func at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/newlib/assert.c:80
+--- 0x40086572: xQueueSemaphoreTake at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/queue.c:1713 (discriminator 1)
+--- 0x4008c024: esp_log_impl_lock_timeout at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_lock.c:42
+--- 0x400d2777: log_level_get at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/log_level/tag_log_level/tag_log_level.c:65
+--- 0x400d27ad: esp_log_level_get_timeout at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/log_level/tag_log_level/tag_log_level.c:102
+--- 0x400e7772: esp_log_writev at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_write.c:32
+--- 0x4008c0d5: esp_log_write at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_write.c:44
+--- 0x400d6d55: i2c_scanner at D:/altium_and_source_projects/Health_monitoring/driver_oled/components/heala_oled.c:175 (discriminator 1)
+--- 0x400d6dda: i2c_master_slave_init at D:/altium_and_source_projects/Health_monitoring/driver_oled/components/heala_oled.c:207
+--- 0x400d6e7b: oled_init at D:/altium_and_source_projects/Health_monitoring/driver_oled/components/heala_oled.c:248
+--- 0x400d6be7: vTaskOledInit at D:/altium_and_source_projects/Health_monitoring/driver_oled/main/driver_oled.c:58
+--- 0x40086745: vPortTaskWrapper at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081961: panic_abort at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/panic.c:454
+[0m
+[0;33m--- 0x400d2777: log_level_get at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/log_level/tag_log_level/tag_log_level.c:65
+[0m
+[0;33m--- 0x400d27ad: esp_log_level_get_timeout at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/log_level/tag_log_level/tag_log_level.c:102
+[0m
+[0;33m--- 0x400e7772: esp_log_writev at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_write.c:32
+[0m
+[0;33m--- 0x4008c0d5: esp_log_write at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_write.c:44
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081961: panic_abort at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/panic.c:454
+--- 0x40085d01: esp_system_abort at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008c29d: __assert_func at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/newlib/assert.c:80
+--- 0x40086572: xQueueSemaphoreTake at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/queue.c:1713 (discriminator 1)
+--- 0x4008c024: esp_log_impl_lock_timeout at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_lock.c:42
+--- 0x400d2777: log_level_get at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/log_level/tag_log_level/tag_log_level.c:65
+--- 0x400d27ad: esp_log_level_get_timeout at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/log_level/tag_log_level/tag_log_level.c:102
+--- 0x400e7772: esp_log_writev at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_write.c:32
+--- 0x4008c0d5: esp_log_write at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_write.c:44
+--- 0x400d6d55: i2c_scanner at D:/altium_and_source_projects/Health_monitoring/driver_oled/components/heala_oled.c:175 (discriminator 1)
+--- 0x400d6dda: i2c_master_slave_init at D:/altium_and_source_projects/Health_monitoring/driver_oled/components/heala_oled.c:207
+--- 0x400d6e7b: oled_init at D:/altium_and_source_projects/Health_monitoring/driver_oled/components/heala_oled.c:248
+--- 0x400d6be7: vTaskOledInit at D:/altium_and_source_projects/Health_monitoring/driver_oled/main/driver_oled.c:58
+--- 0x40086745: vPortTaskWrapper at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081961: panic_abort at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/panic.c:454
+--- 0x40085d01: esp_system_abort at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008c29d: __assert_func at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/newlib/assert.c:80
+--- 0x40086572: xQueueSemaphoreTake at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/queue.c:1713 (discriminator 1)
+--- 0x4008c024: esp_log_impl_lock_timeout at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_lock.c:42
+--- 0x400d2777: log_level_get at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/log_level/tag_log_level/tag_log_level.c:65
+--- 0x400d27ad: esp_log_level_get_timeout at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/log_level/tag_log_level/tag_log_level.c:102
+--- 0x400e7772: esp_log_writev at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_write.c:32
+--- 0x4008c0d5: esp_log_write at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_write.c:44
+--- 0x400d6d55: i2c_scanner at D:/altium_and_source_projects/Health_monitoring/driver_oled/components/heala_oled.c:175 (discriminator 1)
+--- 0x400d6dda: i2c_master_slave_init at D:/altium_and_source_projects/Health_monitoring/driver_oled/components/heala_oled.c:207
+--- 0x400d6e7b: oled_init at D:/altium_and_source_projects/Health_monitoring/driver_oled/components/heala_oled.c:248
+--- 0x400d6be7: vTaskOledInit at D:/altium_and_source_projects/Health_monitoring/driver_oled/main/driver_oled.c:58
+--- 0x40086745: vPortTaskWrapper at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- To exit from IDF monitor please use "Ctrl+]". Alternatively, you can use Ctrl+T Ctrl+X to exit.[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- To exit from IDF monitor please use "Ctrl+]". Alternatively, you can use Ctrl+T Ctrl+X to exit.[0m
+[0;33m--- To exit from IDF monitor please use "Ctrl+]". Alternatively, you can use Ctrl+T Ctrl+X to exit.[0m
+[0;33m--- To exit from IDF monitor please use "Ctrl+]". Alternatively, you can use Ctrl+T Ctrl+X to exit.[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- To exit from IDF monitor please use "Ctrl+]". Alternatively, you can use Ctrl+T Ctrl+X to exit.[0m
+[0;33m--- To exit from IDF monitor please use "Ctrl+]". Alternatively, you can use Ctrl+T Ctrl+X to exit.[0m
+[0;33m--- To exit from IDF monitor please use "Ctrl+]". Alternatively, you can use Ctrl+T Ctrl+X to exit.[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- To exit from IDF monitor please use "Ctrl+]". Alternatively, you can use Ctrl+T Ctrl+X to exit.[0m
+[0;33m--- To exit from IDF monitor please use "Ctrl+]". Alternatively, you can use Ctrl+T Ctrl+X to exit.[0m
+[0;33m--- To exit from IDF monitor please use "Ctrl+]". Alternatively, you can use Ctrl+T Ctrl+X to exit.[0m
+[0;33m--- 0x40081961: panic_abort at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/panic.c:454
+--- 0x40085d01: esp_system_abort at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008c29d: __assert_func at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/newlib/assert.c:80
+[0m
+[0;33m--- To exit from IDF monitor please use "Ctrl+]". Alternatively, you can use Ctrl+T Ctrl+X to exit.[0m
+[0;33m--- 0x400e7772: esp_log_writev at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_write.c:32
+[0m
+[0;33m--- 0x4008c0d5: esp_log_write at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_write.c:44
+[0m
+[0;33m--- 0x400d6d55: i2c_scanner at D:/altium_and_source_projects/Health_monitoring/driver_oled/components/heala_oled.c:175 (discriminator 1)
+[0m
+[0;33m--- To exit from IDF monitor please use "Ctrl+]". Alternatively, you can use Ctrl+T Ctrl+X to exit.[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- To exit from IDF monitor please use "Ctrl+]". Alternatively, you can use Ctrl+T Ctrl+X to exit.[0m
+[0;33m--- To exit from IDF monitor please use "Ctrl+]". Alternatively, you can use Ctrl+T Ctrl+X to exit.[0m
+[0;33m--- 0x40081961: panic_abort at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/panic.c:454
+--- 0x40085d01: esp_system_abort at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008c29d: __assert_func at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/newlib/assert.c:80
+--- 0x40086572: xQueueSemaphoreTake at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/queue.c:1713 (discriminator 1)
+--- 0x4008c024: esp_log_impl_lock_timeout at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_lock.c:42
+--- 0x400d2777: log_level_get at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/log_level/tag_log_level/tag_log_level.c:65
+--- 0x400d27ad: esp_log_level_get_timeout at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/log_level/tag_log_level/tag_log_level.c:102
+--- 0x400e7772: esp_log_writev at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_write.c:32
+--- 0x4008c0d5: esp_log_write at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_write.c:44
+--- 0x400d6d55: i2c_scanner at D:/altium_and_source_projects/Health_monitoring/driver_oled/components/heala_oled.c:175 (discriminator 1)
+--- 0x400d6dda: i2c_master_slave_init at D:/altium_and_source_projects/Health_monitoring/driver_oled/components/heala_oled.c:207
+--- 0x400d6e7b: oled_init at D:/altium_and_source_projects/Health_monitoring/driver_oled/components/heala_oled.c:248
+--- 0x400d6be7: vTaskOledInit at D:/altium_and_source_projects/Health_monitoring/driver_oled/main/driver_oled.c:58
+--- 0x40086745: vPortTaskWrapper at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081961: panic_abort at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/panic.c:454
+--- 0x40085d01: esp_system_abort at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008c29d: __assert_func at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/newlib/assert.c:80
+--- 0x40086572: xQueueSemaphoreTake at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/queue.c:1713 (discriminator 1)
+--- 0x4008c024: esp_log_impl_lock_timeout at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_lock.c:42
+--- 0x400d2777: log_level_get at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/log_level/tag_log_level/tag_log_level.c:65
+--- 0x400d27ad: esp_log_level_get_timeout at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/log_level/tag_log_level/tag_log_level.c:102
+--- 0x400e7772: esp_log_writev at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_write.c:32
+--- 0x4008c0d5: esp_log_write at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_write.c:44
+--- 0x400d6d55: i2c_scanner at D:/altium_and_source_projects/Health_monitoring/driver_oled/components/heala_oled.c:175 (discriminator 1)
+--- 0x400d6dda: i2c_master_slave_init at D:/altium_and_source_projects/Health_monitoring/driver_oled/components/heala_oled.c:207
+--- 0x400d6e7b: oled_init at D:/altium_and_source_projects/Health_monitoring/driver_oled/components/heala_oled.c:248
+--- 0x400d6be7: vTaskOledInit at D:/altium_and_source_projects/Health_monitoring/driver_oled/main/driver_oled.c:58
+--- 0x40086745: vPortTaskWrapper at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081961: panic_abort at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/panic.c:454
+[0m
+[0;33m--- 0x40086572: xQueueSemaphoreTake at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/queue.c:1713 (discriminator 1)
+[0m
+[0;33m--- 0x4008c024: esp_log_impl_lock_timeout at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_lock.c:42
+[0m
+[0;33m--- 0x400d2777: log_level_get at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/log_level/tag_log_level/tag_log_level.c:65
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081961: panic_abort at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/panic.c:454
+--- 0x40085d01: esp_system_abort at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008c29d: __assert_func at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/newlib/assert.c:80
+--- 0x40086572: xQueueSemaphoreTake at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/queue.c:1713 (discriminator 1)
+--- 0x4008c024: esp_log_impl_lock_timeout at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_lock.c:42
+--- 0x400d2777: log_level_get at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/log_level/tag_log_level/tag_log_level.c:65
+--- 0x400d27ad: esp_log_level_get_timeout at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/log_level/tag_log_level/tag_log_level.c:102
+--- 0x400e7772: esp_log_writev at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_write.c:32
+--- 0x4008c0d5: esp_log_write at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_write.c:44
+--- 0x400d6d55: i2c_scanner at D:/altium_and_source_projects/Health_monitoring/driver_oled/components/heala_oled.c:175 (discriminator 1)
+--- 0x400d6dda: i2c_master_slave_init at D:/altium_and_source_projects/Health_monitoring/driver_oled/components/heala_oled.c:207
+--- 0x400d6e7b: oled_init at D:/altium_and_source_projects/Health_monitoring/driver_oled/components/heala_oled.c:248
+--- 0x400d6be7: vTaskOledInit at D:/altium_and_source_projects/Health_monitoring/driver_oled/main/driver_oled.c:58
+--- 0x40086745: vPortTaskWrapper at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081961: panic_abort at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/panic.c:454
+--- 0x40085d01: esp_system_abort at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008c29d: __assert_func at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/newlib/assert.c:80
+--- 0x40086572: xQueueSemaphoreTake at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/queue.c:1713 (discriminator 1)
+--- 0x4008c024: esp_log_impl_lock_timeout at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_lock.c:42
+--- 0x400d2777: log_level_get at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/log_level/tag_log_level/tag_log_level.c:65
+--- 0x400d27ad: esp_log_level_get_timeout at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/log_level/tag_log_level/tag_log_level.c:102
+--- 0x400e7772: esp_log_writev at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_write.c:32
+--- 0x4008c0d5: esp_log_write at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_write.c:44
+--- 0x400d6d55: i2c_scanner at D:/altium_and_source_projects/Health_monitoring/driver_oled/components/heala_oled.c:175 (discriminator 1)
+--- 0x400d6dda: i2c_master_slave_init at D:/altium_and_source_projects/Health_monitoring/driver_oled/components/heala_oled.c:207
+--- 0x400d6e7b: oled_init at D:/altium_and_source_projects/Health_monitoring/driver_oled/components/heala_oled.c:248
+--- 0x400d6be7: vTaskOledInit at D:/altium_and_source_projects/Health_monitoring/driver_oled/main/driver_oled.c:58
+--- 0x40086745: vPortTaskWrapper at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081961: panic_abort at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/panic.c:454
+--- 0x40085d01: esp_system_abort at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008c29d: __assert_func at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/newlib/assert.c:80
+--- 0x40086572: xQueueSemaphoreTake at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/queue.c:1713 (discriminator 1)
+--- 0x4008c024: esp_log_impl_lock_timeout at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_lock.c:42
+--- 0x400d2777: log_level_get at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/log_level/tag_log_level/tag_log_level.c:65
+--- 0x400d27ad: esp_log_level_get_timeout at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/log_level/tag_log_level/tag_log_level.c:102
+--- 0x400e7772: esp_log_writev at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_write.c:32
+--- 0x4008c0d5: esp_log_write at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_write.c:44
+--- 0x400d6d55: i2c_scanner at D:/altium_and_source_projects/Health_monitoring/driver_oled/components/heala_oled.c:175 (discriminator 1)
+--- 0x400d6dda: i2c_master_slave_init at D:/altium_and_source_projects/Health_monitoring/driver_oled/components/heala_oled.c:207
+--- 0x400d6e7b: oled_init at D:/altium_and_source_projects/Health_monitoring/driver_oled/components/heala_oled.c:248
+--- 0x400d6be7: vTaskOledInit at D:/altium_and_source_projects/Health_monitoring/driver_oled/main/driver_oled.c:58
+--- 0x40086745: vPortTaskWrapper at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081961: panic_abort at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/panic.c:454
+--- 0x40085d01: esp_system_abort at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008c29d: __assert_func at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/newlib/assert.c:80
+--- 0x40086572: xQueueSemaphoreTake at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/queue.c:1713 (discriminator 1)
+--- 0x4008c024: esp_log_impl_lock_timeout at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_lock.c:42
+--- 0x400d2777: log_level_get at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/log_level/tag_log_level/tag_log_level.c:65
+--- 0x400d27ad: esp_log_level_get_timeout at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/log_level/tag_log_level/tag_log_level.c:102
+--- 0x400e7772: esp_log_writev at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_write.c:32
+--- 0x4008c0d5: esp_log_write at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_write.c:44
+--- 0x400d6d55: i2c_scanner at D:/altium_and_source_projects/Health_monitoring/driver_oled/components/heala_oled.c:175 (discriminator 1)
+--- 0x400d6dda: i2c_master_slave_init at D:/altium_and_source_projects/Health_monitoring/driver_oled/components/heala_oled.c:207
+--- 0x400d6e7b: oled_init at D:/altium_and_source_projects/Health_monitoring/driver_oled/components/heala_oled.c:248
+--- 0x400d6be7: vTaskOledInit at D:/altium_and_source_projects/Health_monitoring/driver_oled/main/driver_oled.c:58
+--- 0x40086745: vPortTaskWrapper at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081961: panic_abort at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/panic.c:454
+--- 0x40085d01: esp_system_abort at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008c29d: __assert_func at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/newlib/assert.c:80
+--- 0x40086572: xQueueSemaphoreTake at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/queue.c:1713 (discriminator 1)
+--- 0x4008c024: esp_log_impl_lock_timeout at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_lock.c:42
+--- 0x400d2777: log_level_get at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/log_level/tag_log_level/tag_log_level.c:65
+--- 0x400d27ad: esp_log_level_get_timeout at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/log_level/tag_log_level/tag_log_level.c:102
+--- 0x400e7772: esp_log_writev at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_write.c:32
+--- 0x4008c0d5: esp_log_write at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_write.c:44
+--- 0x400d6d55: i2c_scanner at D:/altium_and_source_projects/Health_monitoring/driver_oled/components/heala_oled.c:175 (discriminator 1)
+--- 0x400d6dda: i2c_master_slave_init at D:/altium_and_source_projects/Health_monitoring/driver_oled/components/heala_oled.c:207
+--- 0x400d6e7b: oled_init at D:/altium_and_source_projects/Health_monitoring/driver_oled/components/heala_oled.c:248
+--- 0x400d6be7: vTaskOledInit at D:/altium_and_source_projects/Health_monitoring/driver_oled/main/driver_oled.c:58
+--- 0x40086745: vPortTaskWrapper at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081961: panic_abort at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/panic.c:454
+--- 0x40085d01: esp_system_abort at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008c29d: __assert_func at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/newlib/assert.c:80
+--- 0x40086572: xQueueSemaphoreTake at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/queue.c:1713 (discriminator 1)
+--- 0x4008c024: esp_log_impl_lock_timeout at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_lock.c:42
+--- 0x400d2777: log_level_get at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/log_level/tag_log_level/tag_log_level.c:65
+--- 0x400d27ad: esp_log_level_get_timeout at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/log_level/tag_log_level/tag_log_level.c:102
+--- 0x400e7772: esp_log_writev at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_write.c:32
+--- 0x4008c0d5: esp_log_write at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_write.c:44
+--- 0x400d6d55: i2c_scanner at D:/altium_and_source_projects/Health_monitoring/driver_oled/components/heala_oled.c:175 (discriminator 1)
+--- 0x400d6dda: i2c_master_slave_init at D:/altium_and_source_projects/Health_monitoring/driver_oled/components/heala_oled.c:207
+--- 0x400d6e7b: oled_init at D:/altium_and_source_projects/Health_monitoring/driver_oled/components/heala_oled.c:248
+--- 0x400d6be7: vTaskOledInit at D:/altium_and_source_projects/Health_monitoring/driver_oled/main/driver_oled.c:58
+--- 0x40086745: vPortTaskWrapper at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081961: panic_abort at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/panic.c:454
+--- 0x40085d01: esp_system_abort at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008c29d: __assert_func at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/newlib/assert.c:80
+--- 0x40086572: xQueueSemaphoreTake at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/queue.c:1713 (discriminator 1)
+--- 0x4008c024: esp_log_impl_lock_timeout at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_lock.c:42
+--- 0x400d2777: log_level_get at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/log_level/tag_log_level/tag_log_level.c:65
+--- 0x400d27ad: esp_log_level_get_timeout at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/log_level/tag_log_level/tag_log_level.c:102
+--- 0x400e7772: esp_log_writev at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_write.c:32
+--- 0x4008c0d5: esp_log_write at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_write.c:44
+--- 0x400d6d55: i2c_scanner at D:/altium_and_source_projects/Health_monitoring/driver_oled/components/heala_oled.c:175 (discriminator 1)
+--- 0x400d6dda: i2c_master_slave_init at D:/altium_and_source_projects/Health_monitoring/driver_oled/components/heala_oled.c:207
+--- 0x400d6e7b: oled_init at D:/altium_and_source_projects/Health_monitoring/driver_oled/components/heala_oled.c:248
+--- 0x400d6be7: vTaskOledInit at D:/altium_and_source_projects/Health_monitoring/driver_oled/main/driver_oled.c:58
+--- 0x40086745: vPortTaskWrapper at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081961: panic_abort at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/panic.c:454
+--- 0x40085d01: esp_system_abort at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008c29d: __assert_func at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/newlib/assert.c:80
+--- 0x40086572: xQueueSemaphoreTake at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/queue.c:1713 (discriminator 1)
+--- 0x4008c024: esp_log_impl_lock_timeout at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_lock.c:42
+--- 0x400d2777: log_level_get at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/log_level/tag_log_level/tag_log_level.c:65
+--- 0x400d27ad: esp_log_level_get_timeout at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/log_level/tag_log_level/tag_log_level.c:102
+--- 0x400e7772: esp_log_writev at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_write.c:32
+--- 0x4008c0d5: esp_log_write at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_write.c:44
+--- 0x400d6d55: i2c_scanner at D:/altium_and_source_projects/Health_monitoring/driver_oled/components/heala_oled.c:175 (discriminator 1)
+--- 0x400d6dda: i2c_master_slave_init at D:/altium_and_source_projects/Health_monitoring/driver_oled/components/heala_oled.c:207
+--- 0x400d6e7b: oled_init at D:/altium_and_source_projects/Health_monitoring/driver_oled/components/heala_oled.c:248
+--- 0x400d6be7: vTaskOledInit at D:/altium_and_source_projects/Health_monitoring/driver_oled/main/driver_oled.c:58
+--- 0x40086745: vPortTaskWrapper at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081961: panic_abort at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/panic.c:454
+--- 0x40085d01: esp_system_abort at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008c29d: __assert_func at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/newlib/assert.c:80
+--- 0x40086572: xQueueSemaphoreTake at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/queue.c:1713 (discriminator 1)
+--- 0x4008c024: esp_log_impl_lock_timeout at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_lock.c:42
+--- 0x400d2777: log_level_get at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/log_level/tag_log_level/tag_log_level.c:65
+--- 0x400d27ad: esp_log_level_get_timeout at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/log_level/tag_log_level/tag_log_level.c:102
+--- 0x400e7772: esp_log_writev at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_write.c:32
+--- 0x4008c0d5: esp_log_write at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_write.c:44
+--- 0x400d6d55: i2c_scanner at D:/altium_and_source_projects/Health_monitoring/driver_oled/components/heala_oled.c:175 (discriminator 1)
+--- 0x400d6dda: i2c_master_slave_init at D:/altium_and_source_projects/Health_monitoring/driver_oled/components/heala_oled.c:207
+--- 0x400d6e7b: oled_init at D:/altium_and_source_projects/Health_monitoring/driver_oled/components/heala_oled.c:248
+--- 0x400d6be7: vTaskOledInit at D:/altium_and_source_projects/Health_monitoring/driver_oled/main/driver_oled.c:58
+--- 0x40086745: vPortTaskWrapper at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081961: panic_abort at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/panic.c:454
+--- 0x40085d01: esp_system_abort at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008c29d: __assert_func at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/newlib/assert.c:80
+--- 0x40086572: xQueueSemaphoreTake at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/queue.c:1713 (discriminator 1)
+--- 0x4008c024: esp_log_impl_lock_timeout at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_lock.c:42
+--- 0x400d2777: log_level_get at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/log_level/tag_log_level/tag_log_level.c:65
+--- 0x400d27ad: esp_log_level_get_timeout at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/log_level/tag_log_level/tag_log_level.c:102
+--- 0x400e7772: esp_log_writev at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_write.c:32
+--- 0x4008c0d5: esp_log_write at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_write.c:44
+--- 0x400d6d55: i2c_scanner at D:/altium_and_source_projects/Health_monitoring/driver_oled/components/heala_oled.c:175 (discriminator 1)
+--- 0x400d6dda: i2c_master_slave_init at D:/altium_and_source_projects/Health_monitoring/driver_oled/components/heala_oled.c:207
+--- 0x400d6e7b: oled_init at D:/altium_and_source_projects/Health_monitoring/driver_oled/components/heala_oled.c:248
+--- 0x400d6be7: vTaskOledInit at D:/altium_and_source_projects/Health_monitoring/driver_oled/main/driver_oled.c:58
+--- 0x40086745: vPortTaskWrapper at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081961: panic_abort at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/panic.c:454
+--- 0x40085d01: esp_system_abort at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008c29d: __assert_func at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/newlib/assert.c:80
+--- 0x40086572: xQueueSemaphoreTake at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/queue.c:1713 (discriminator 1)
+--- 0x4008c024: esp_log_impl_lock_timeout at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_lock.c:42
+--- 0x400d2777: log_level_get at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/log_level/tag_log_level/tag_log_level.c:65
+--- 0x400d27ad: esp_log_level_get_timeout at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/log_level/tag_log_level/tag_log_level.c:102
+--- 0x400e7772: esp_log_writev at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_write.c:32
+--- 0x4008c0d5: esp_log_write at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_write.c:44
+--- 0x400d6d55: i2c_scanner at D:/altium_and_source_projects/Health_monitoring/driver_oled/components/heala_oled.c:175 (discriminator 1)
+--- 0x400d6dda: i2c_master_slave_init at D:/altium_and_source_projects/Health_monitoring/driver_oled/components/heala_oled.c:207
+--- 0x400d6e7b: oled_init at D:/altium_and_source_projects/Health_monitoring/driver_oled/components/heala_oled.c:248
+--- 0x400d6be7: vTaskOledInit at D:/altium_and_source_projects/Health_monitoring/driver_oled/main/driver_oled.c:58
+--- 0x40086745: vPortTaskWrapper at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081961: panic_abort at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/panic.c:454
+--- 0x40085d01: esp_system_abort at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008c29d: __assert_func at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/newlib/assert.c:80
+--- 0x40086572: xQueueSemaphoreTake at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/queue.c:1713 (discriminator 1)
+--- 0x4008c024: esp_log_impl_lock_timeout at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_lock.c:42
+--- 0x400d2777: log_level_get at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/log_level/tag_log_level/tag_log_level.c:65
+--- 0x400d27ad: esp_log_level_get_timeout at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/log_level/tag_log_level/tag_log_level.c:102
+--- 0x400e7772: esp_log_writev at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_write.c:32
+--- 0x4008c0d5: esp_log_write at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_write.c:44
+--- 0x400d6d55: i2c_scanner at D:/altium_and_source_projects/Health_monitoring/driver_oled/components/heala_oled.c:175 (discriminator 1)
+--- 0x400d6dda: i2c_master_slave_init at D:/altium_and_source_projects/Health_monitoring/driver_oled/components/heala_oled.c:207
+--- 0x400d6e7b: oled_init at D:/altium_and_source_projects/Health_monitoring/driver_oled/components/heala_oled.c:248
+--- 0x400d6be7: vTaskOledInit at D:/altium_and_source_projects/Health_monitoring/driver_oled/main/driver_oled.c:58
+--- 0x40086745: vPortTaskWrapper at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081961: panic_abort at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/panic.c:454
+--- 0x40085d01: esp_system_abort at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008c29d: __assert_func at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/newlib/assert.c:80
+--- 0x40086572: xQueueSemaphoreTake at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/queue.c:1713 (discriminator 1)
+--- 0x4008c024: esp_log_impl_lock_timeout at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_lock.c:42
+--- 0x400d2777: log_level_get at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/log_level/tag_log_level/tag_log_level.c:65
+--- 0x400d27ad: esp_log_level_get_timeout at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/log_level/tag_log_level/tag_log_level.c:102
+--- 0x400e7772: esp_log_writev at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_write.c:32
+--- 0x4008c0d5: esp_log_write at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_write.c:44
+--- 0x400d6d55: i2c_scanner at D:/altium_and_source_projects/Health_monitoring/driver_oled/components/heala_oled.c:175 (discriminator 1)
+--- 0x400d6dda: i2c_master_slave_init at D:/altium_and_source_projects/Health_monitoring/driver_oled/components/heala_oled.c:207
+--- 0x400d6e7b: oled_init at D:/altium_and_source_projects/Health_monitoring/driver_oled/components/heala_oled.c:248
+--- 0x400d6be7: vTaskOledInit at D:/altium_and_source_projects/Health_monitoring/driver_oled/main/driver_oled.c:58
+--- 0x40086745: vPortTaskWrapper at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081961: panic_abort at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/panic.c:454
+--- 0x40085d01: esp_system_abort at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008c29d: __assert_func at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/newlib/assert.c:80
+--- 0x40086572: xQueueSemaphoreTake at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/queue.c:1713 (discriminator 1)
+--- 0x4008c024: esp_log_impl_lock_timeout at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_lock.c:42
+--- 0x400d2777: log_level_get at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/log_level/tag_log_level/tag_log_level.c:65
+--- 0x400d27ad: esp_log_level_get_timeout at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/log_level/tag_log_level/tag_log_level.c:102
+--- 0x400e7772: esp_log_writev at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_write.c:32
+--- 0x4008c0d5: esp_log_write at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_write.c:44
+--- 0x400d6d55: i2c_scanner at D:/altium_and_source_projects/Health_monitoring/driver_oled/components/heala_oled.c:175 (discriminator 1)
+--- 0x400d6dda: i2c_master_slave_init at D:/altium_and_source_projects/Health_monitoring/driver_oled/components/heala_oled.c:207
+--- 0x400d6e7b: oled_init at D:/altium_and_source_projects/Health_monitoring/driver_oled/components/heala_oled.c:248
+--- 0x400d6be7: vTaskOledInit at D:/altium_and_source_projects/Health_monitoring/driver_oled/main/driver_oled.c:58
+--- 0x40086745: vPortTaskWrapper at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081961: panic_abort at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/panic.c:454
+--- 0x40085d01: esp_system_abort at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008c29d: __assert_func at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/newlib/assert.c:80
+--- 0x40086572: xQueueSemaphoreTake at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/queue.c:1713 (discriminator 1)
+--- 0x4008c024: esp_log_impl_lock_timeout at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_lock.c:42
+--- 0x400d2777: log_level_get at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/log_level/tag_log_level/tag_log_level.c:65
+--- 0x400d27ad: esp_log_level_get_timeout at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/log_level/tag_log_level/tag_log_level.c:102
+--- 0x400e7772: esp_log_writev at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_write.c:32
+--- 0x4008c0d5: esp_log_write at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_write.c:44
+--- 0x400d6d55: i2c_scanner at D:/altium_and_source_projects/Health_monitoring/driver_oled/components/heala_oled.c:175 (discriminator 1)
+--- 0x400d6dda: i2c_master_slave_init at D:/altium_and_source_projects/Health_monitoring/driver_oled/components/heala_oled.c:207
+--- 0x400d6e7b: oled_init at D:/altium_and_source_projects/Health_monitoring/driver_oled/components/heala_oled.c:248
+--- 0x400d6be7: vTaskOledInit at D:/altium_and_source_projects/Health_monitoring/driver_oled/main/driver_oled.c:58
+--- 0x40086745: vPortTaskWrapper at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081961: panic_abort at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/panic.c:454
+--- 0x40085d01: esp_system_abort at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008c29d: __assert_func at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/newlib/assert.c:80
+--- 0x40086572: xQueueSemaphoreTake at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/queue.c:1713 (discriminator 1)
+--- 0x4008c024: esp_log_impl_lock_timeout at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_lock.c:42
+--- 0x400d2777: log_level_get at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/log_level/tag_log_level/tag_log_level.c:65
+--- 0x400d27ad: esp_log_level_get_timeout at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/log_level/tag_log_level/tag_log_level.c:102
+--- 0x400e7772: esp_log_writev at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_write.c:32
+--- 0x4008c0d5: esp_log_write at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_write.c:44
+--- 0x400d6d55: i2c_scanner at D:/altium_and_source_projects/Health_monitoring/driver_oled/components/heala_oled.c:175 (discriminator 1)
+--- 0x400d6dda: i2c_master_slave_init at D:/altium_and_source_projects/Health_monitoring/driver_oled/components/heala_oled.c:207
+--- 0x400d6e7b: oled_init at D:/altium_and_source_projects/Health_monitoring/driver_oled/components/heala_oled.c:248
+--- 0x400d6be7: vTaskOledInit at D:/altium_and_source_projects/Health_monitoring/driver_oled/main/driver_oled.c:58
+--- 0x40086745: vPortTaskWrapper at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081961: panic_abort at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/panic.c:454
+--- 0x40085d01: esp_system_abort at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008c29d: __assert_func at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/newlib/assert.c:80
+--- 0x40086572: xQueueSemaphoreTake at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/queue.c:1713 (discriminator 1)
+--- 0x4008c024: esp_log_impl_lock_timeout at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_lock.c:42
+--- 0x400d2777: log_level_get at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/log_level/tag_log_level/tag_log_level.c:65
+--- 0x400d27ad: esp_log_level_get_timeout at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/log_level/tag_log_level/tag_log_level.c:102
+--- 0x400e7772: esp_log_writev at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_write.c:32
+--- 0x4008c0d5: esp_log_write at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_write.c:44
+--- 0x400d6d55: i2c_scanner at D:/altium_and_source_projects/Health_monitoring/driver_oled/components/heala_oled.c:175 (discriminator 1)
+--- 0x400d6dda: i2c_master_slave_init at D:/altium_and_source_projects/Health_monitoring/driver_oled/components/heala_oled.c:207
+--- 0x400d6e7b: oled_init at D:/altium_and_source_projects/Health_monitoring/driver_oled/components/heala_oled.c:248
+--- 0x400d6be7: vTaskOledInit at D:/altium_and_source_projects/Health_monitoring/driver_oled/main/driver_oled.c:58
+--- 0x40086745: vPortTaskWrapper at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081961: panic_abort at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/panic.c:454
+--- 0x40085d01: esp_system_abort at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008c29d: __assert_func at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/newlib/assert.c:80
+--- 0x40086572: xQueueSemaphoreTake at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/queue.c:1713 (discriminator 1)
+--- 0x4008c024: esp_log_impl_lock_timeout at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_lock.c:42
+--- 0x400d2777: log_level_get at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/log_level/tag_log_level/tag_log_level.c:65
+--- 0x400d27ad: esp_log_level_get_timeout at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/log_level/tag_log_level/tag_log_level.c:102
+--- 0x400e7772: esp_log_writev at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_write.c:32
+--- 0x4008c0d5: esp_log_write at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_write.c:44
+--- 0x400d6d55: i2c_scanner at D:/altium_and_source_projects/Health_monitoring/driver_oled/components/heala_oled.c:175 (discriminator 1)
+--- 0x400d6dda: i2c_master_slave_init at D:/altium_and_source_projects/Health_monitoring/driver_oled/components/heala_oled.c:207
+--- 0x400d6e7b: oled_init at D:/altium_and_source_projects/Health_monitoring/driver_oled/components/heala_oled.c:248
+--- 0x400d6be7: vTaskOledInit at D:/altium_and_source_projects/Health_monitoring/driver_oled/main/driver_oled.c:58
+--- 0x40086745: vPortTaskWrapper at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081961: panic_abort at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/panic.c:454
+--- 0x40085d01: esp_system_abort at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008c29d: __assert_func at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/newlib/assert.c:80
+--- 0x40086572: xQueueSemaphoreTake at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/queue.c:1713 (discriminator 1)
+--- 0x4008c024: esp_log_impl_lock_timeout at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_lock.c:42
+--- 0x400d2777: log_level_get at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/log_level/tag_log_level/tag_log_level.c:65
+--- 0x400d27ad: esp_log_level_get_timeout at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/log_level/tag_log_level/tag_log_level.c:102
+--- 0x400e7772: esp_log_writev at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_write.c:32
+--- 0x4008c0d5: esp_log_write at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_write.c:44
+--- 0x400d6d55: i2c_scanner at D:/altium_and_source_projects/Health_monitoring/driver_oled/components/heala_oled.c:175 (discriminator 1)
+--- 0x400d6dda: i2c_master_slave_init at D:/altium_and_source_projects/Health_monitoring/driver_oled/components/heala_oled.c:207
+--- 0x400d6e7b: oled_init at D:/altium_and_source_projects/Health_monitoring/driver_oled/components/heala_oled.c:248
+--- 0x400d6be7: vTaskOledInit at D:/altium_and_source_projects/Health_monitoring/driver_oled/main/driver_oled.c:58
+--- 0x40086745: vPortTaskWrapper at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081961: panic_abort at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/panic.c:454
+--- 0x40085d01: esp_system_abort at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008c29d: __assert_func at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/newlib/assert.c:80
+--- 0x40086572: xQueueSemaphoreTake at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/queue.c:1713 (discriminator 1)
+--- 0x4008c024: esp_log_impl_lock_timeout at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_lock.c:42
+--- 0x400d2777: log_level_get at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/log_level/tag_log_level/tag_log_level.c:65
+--- 0x400d27ad: esp_log_level_get_timeout at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/log_level/tag_log_level/tag_log_level.c:102
+--- 0x400e7772: esp_log_writev at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_write.c:32
+--- 0x4008c0d5: esp_log_write at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_write.c:44
+--- 0x400d6d55: i2c_scanner at D:/altium_and_source_projects/Health_monitoring/driver_oled/components/heala_oled.c:175 (discriminator 1)
+--- 0x400d6dda: i2c_master_slave_init at D:/altium_and_source_projects/Health_monitoring/driver_oled/components/heala_oled.c:207
+--- 0x400d6e7b: oled_init at D:/altium_and_source_projects/Health_monitoring/driver_oled/components/heala_oled.c:248
+--- 0x400d6be7: vTaskOledInit at D:/altium_and_source_projects/Health_monitoring/driver_oled/main/driver_oled.c:58
+--- 0x40086745: vPortTaskWrapper at D:/esp/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0m
+Traceback (most recent call last):
+  File "D:\esp\Espressif\frameworks\esp-idf-v5.4.1\tools/idf_monitor.py", line 11, in <module>
+    sys.exit(subprocess.run([sys.executable, '-m', 'esp_idf_monitor'] + sys.argv[1:]).returncode)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "subprocess.py", line 550, in run
+  File "subprocess.py", line 1199, in communicate
+  File "subprocess.py", line 1262, in wait
+  File "subprocess.py", line 1543, in _wait
+KeyboardInterrupt

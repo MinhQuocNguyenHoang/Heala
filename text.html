@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>OLED Bitmap Editor (SSD1306 raw)</title>
+<style>
+  body{font-family:system-ui,Segoe UI,Roboto,Arial;margin:16px;background:#f6f8fa;color:#111}
+  .controls{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:12px}
+  label{font-size:14px}
+  input[type=number]{width:80px;padding:6px}
+  button{padding:8px 12px;margin-left:4px}
+  #canvasWrap{background:#222;padding:12px;display:inline-block}
+  canvas{image-rendering:pixelated;background:#fff;cursor:crosshair}
+  #exportArea{width:100%;height:200px;margin-top:12px;font-family:monospace;white-space:pre;overflow:auto}
+  .hint{font-size:13px;color:#444;margin-top:8px}
+</style>
+</head>
+<body>
+<h2>OLED Bitmap Editor — Export for raw SSD1306 buffer</h2>
+<div class="controls">
+  <label>Width: <input id="width" type="number" value="128" min="1" max="1024"></label>
+  <label>Height: <input id="height" type="number" value="64" min="8" max="1024" step="8"></label>
+  <label>Pixel On = <select id="polarity"><option value="1">1 (black-on-white)</option><option value="0">0 (white-on-black)</option></select></label>
+  <button id="applyBtn">Apply</button>
+  <button id="clearBtn">Clear</button>
+  <button id="invertBtn">Invert</button>
+  <button id="fillBtn">Fill</button>
+  <button id="exportBtn">Export C array (SSD1306)</button>
+  <button id="copyBtn">Copy to clipboard</button>
+  <button id="downloadBtn">Download .h</button>
+</div>
+<div id="canvasWrap">
+  <canvas id="canvas"></canvas>
+</div>
+<div class="hint">Left-click to draw, Right-click to erase, Drag to paint. Use width/height then "Apply" to recreate canvas. Height must be multiple of 8 for SSD1306 pages.</div>
+<textarea id="exportArea" readonly placeholder="Exported C array will appear here..."></textarea>
+<script>
+(function(){
+  const canvas = document.getElementById('canvas');
+  const ctx = canvas.getContext('2d');
+  const widthInput = document.getElementById('width');
+  const heightInput = document.getElementById('height');
+  const polaritySelect = document.getElementById('polarity');
+  const applyBtn = document.getElementById('applyBtn');
+  const clearBtn = document.getElementById('clearBtn');
+  const invertBtn = document.getElementById('invertBtn');
+  const fillBtn = document.getElementById('fillBtn');
+  const exportBtn = document.getElementById('exportBtn');
+  const copyBtn = document.getElementById('copyBtn');
+  const downloadBtn = document.getElementById('downloadBtn');
+  const exportArea = document.getElementById('exportArea');
+
+  let W = parseInt(widthInput.value,10) || 128;
+  let H = parseInt(heightInput.value,10) || 64;
+  const pixelSize = 6; // visual scaling
+  let grid = []; // 2D boolean
+  let drawing = false;
+  let drawMode = true; // true=draw on, false=erase
+
+  function makeGrid(w,h){
+    grid = new Array(h);
+    for(let y=0;y<h;y++){ grid[y] = new Uint8Array(w); }
+  }
+
+  function resizeCanvas(){
+    canvas.width = W * pixelSize;
+    canvas.height = H * pixelSize;
+    canvas.style.width = canvas.width + 'px';
+    canvas.style.height = canvas.height + 'px';
+    redraw();
+  }
+
+  function redraw(){
+    ctx.clearRect(0,0,canvas.width,canvas.height);
+    // background
+    ctx.fillStyle = '#ffffff';
+    ctx.fillRect(0,0,canvas.width,canvas.height);
+    // pixels
+    for(let y=0;y<H;y++){
+      for(let x=0;x<W;x++){
+        if(grid[y][x]){
+          ctx.fillStyle = '#000000';
+          ctx.fillRect(x*pixelSize, y*pixelSize, pixelSize, pixelSize);
+        }
+        // grid lines
+        ctx.strokeStyle = 'rgba(0,0,0,0.06)';
+        ctx.strokeRect(x*pixelSize+0.5, y*pixelSize+0.5, pixelSize-1, pixelSize-1);
+      }
+    }
+  }
+
+  function setPixelFromEvent(e, value){
+    const rect = canvas.getBoundingClientRect();
+    const cx = Math.floor((e.clientX - rect.left) / pixelSize);
+    const cy = Math.floor((e.clientY - rect.top) / pixelSize);
+    if(cx < 0 || cy < 0 || cx >= W || cy >= H) return;
+    grid[cy][cx] = value ? 1 : 0;
+    redraw();
+  }
+
+  canvas.addEventListener('mousedown', (e)=>{
+    e.preventDefault();
+    drawing = true;
+    const val = (e.button === 2) ? 0 : 1; // right click to erase
+    setPixelFromEvent(e, val);
+  });
+  window.addEventListener('mouseup', ()=>{ drawing = false; });
+  canvas.addEventListener('mousemove', (e)=>{ if(drawing) setPixelFromEvent(e, e.buttons & 1 ? 1 : 0); });
+  canvas.addEventListener('contextmenu', (e)=>{ e.preventDefault(); });
+
+  applyBtn.addEventListener('click', ()=>{
+    const w = parseInt(widthInput.value,10) || 128;
+    let h = parseInt(heightInput.value,10) || 64;
+    if(h % 8 !== 0){ alert('Height must be a multiple of 8 for SSD1306 pages.'); return; }
+    W = w; H = h; makeGrid(W,H); resizeCanvas(); exportArea.value = '';
+  });
+
+  clearBtn.addEventListener('click', ()=>{ makeGrid(W,H); redraw(); exportArea.value=''; });
+  invertBtn.addEventListener('click', ()=>{ for(let y=0;y<H;y++) for(let x=0;x<W;x++) grid[y][x] ^=1; redraw(); });
+  fillBtn.addEventListener('click', ()=>{ for(let y=0;y<H;y++) for(let x=0;x<W;x++) grid[y][x]=1; redraw(); });
+
+  function exportSSD1306(){
+    // SSD1306 expects byte pages: width * (height/8) bytes,
+    // iterate x (0..W-1), page (0..pages-1), set bit b if pixel at y = page*8 + b is on.
+    const pages = H / 8;
+  const bytes = [];
+  for (let p = 0; p < pages; p++) {       // ⬅️ page trước
+    for (let x = 0; x < W; x++) {         // ⬅️ rồi mới qua từng cột
+      let b = 0;
+      for (let bit = 0; bit < 8; bit++) {
+        const y = p * 8 + bit;
+        const pixel = grid[y][x] ? 1 : 0;
+        if (pixel) b |= (1 << bit);
+      }
+      bytes.push(b & 0xff);
+    }
+  }
+  return { bytes, pages };
+  }
+
+  exportBtn.addEventListener('click', ()=>{
+    const polarity = parseInt(polaritySelect.value,10); // 1 = pixel on -> 1
+    const res = exportSSD1306();
+    const bytes = res.bytes.slice();
+    // apply polarity if 0 means pixel-on should be 0 in output
+    if(polarity === 0){ for(let i=0;i<bytes.length;i++) bytes[i] = (~bytes[i]) & 0xFF; }
+
+    // create C array text
+    const name = 'image_'+W+'x'+H;
+    let out = `// ${W}x${H} bitmap for SSD1306 (pages=${res.pages})\n`;
+    out += `const uint8_t ${name}[] PROGMEM = {\n`;
+    let line = '  ';
+    for(let i=0;i<bytes.length;i++){
+      line += '0x' + bytes[i].toString(16).padStart(2,'0') + ', ';
+      if((i+1)%12===0){ out += line + '\n'; line = '  '; }
+    }
+    if(line.trim() !== '') out += line + '\n';
+    out += '};\n\n';
+    out += `// Use with SSD1306: write buffer directly to device (width=${W},height=${H}) in page order.`;
+
+    exportArea.value = out;
+  });
+
+  copyBtn.addEventListener('click', async ()=>{
+    try{
+      await navigator.clipboard.writeText(exportArea.value);
+      alert('Copied to clipboard');
+    }catch(e){ alert('Copy failed — select and copy manually'); }
+  });
+
+  downloadBtn.addEventListener('click', ()=>{
+    const text = exportArea.value || '';
+    const blob = new Blob([text], {type:'text/plain'});
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = 'oled_bitmap.h';
+    document.body.appendChild(a); a.click(); a.remove();
+  });
+
+  // init
+  makeGrid(W,H); resizeCanvas();
+})();
+</script>
+</body>
+</html>
