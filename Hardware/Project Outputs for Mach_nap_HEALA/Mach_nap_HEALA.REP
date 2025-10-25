@@ -1,0 +1,61 @@
+*************************************************************
+FileName = Mach_nap_HEALA.GBR
+AutoAperture = True
+*************************************************************
+Generating : Bottom Layer
+      File : Mach_nap_HEALA.GBL
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D21
+    D22
+    D23
+    D24
+    D25
+    D26
+    D27
+*************************************************************
+
+*************************************************************
+Generating : Top Layer
+      File : Mach_nap_HEALA.GTL
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D10
+    D11
+    D12
+    D13
+    D14
+    D15
+    D16
+    D17
+    D18
+    D19
+    D20
+    D21
+    D22
+    D23
+    D24
+    D25
+    D26
+    D27
+*************************************************************
+
+*************************************************************
+Generating : Profile
+      File : Mach_nap_HEALA.GM
+
+
+Used DCodes :
+    D28
+*************************************************************
+

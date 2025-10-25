@@ -1,0 +1,14 @@
+Output: Gerber Files
+Type  : Gerber
+From  : Variant [[No Variations]] of Project [Mach_nap_HEALA.PrjPcb]
+   Generated File[Mach_nap_HEALA.GTL]
+   Generated File[Mach_nap_HEALA.GBL]
+   Generated File[Mach_nap_HEALA.GM]
+   Generated File[Mach_nap_HEALA.EXTREP]
+   Generated File[Mach_nap_HEALA.REP]
+
+
+Files Generated   : 5
+Documents Printed : 0
+
+Finished Output Generation At 7:43:43 PM On 10/23/2025
