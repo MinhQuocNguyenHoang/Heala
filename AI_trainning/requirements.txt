@@ -1,7 +1,0 @@
-tqdm
-tensorflow == 2.16.1
-# tensorflow-gpu
-numpy
-wfdb == 3.4.1
-scipy
-matplotlib
